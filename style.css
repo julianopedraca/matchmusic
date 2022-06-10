@@ -1,5 +1,5 @@
-*{
-    padding:0;
+* {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -7,10 +7,10 @@
     font-size: 14px;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243,243,243);
+    background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
     display: flex;
@@ -18,7 +18,7 @@ body{
 
 }
 
-.musicmatch-wrapper{
+.musicmatch-wrapper {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -26,27 +26,37 @@ body{
     height: 100vh;
 }
 
-.musicmatch-phone{
+.musicmatch-phone {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-.musicmatch-phone img{
+.musicmatch-phone img {
     height: 50rem;
 }
 
-.matchmusic-continue{
+.matchmusic-continue {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-
+    height: 25%;
+    width: 50%;
+    align-items: center;
+    margin-bottom: 390px;
+    background-color: blueviolet;
 }
 
-.matchmusic-continue .logo{
-    height: 30%;
+.profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orangered;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-photo img {
     width: 30%;
-    margin-top: 100px;
-    align-self: center;
+    margin-right: 15px;
 }
