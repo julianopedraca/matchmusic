@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
     font-size: 14px;
 }
 
-body {
+body{
     width: 100%;
     min-height: 100vh;
     background-color: rgb(243, 243, 243);
@@ -15,48 +15,142 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-
 }
 
-.musicmatch-wrapper {
+.musicmatch-wrapper{
     display: flex;
-    align-items: center;
+    align-items: center; /*alinhamento vertical dos itens*/
     justify-content: start;
     width: 60%;
     height: 100vh;
 }
 
-.musicmatch-phone {
+.musicmatch-phone{
     display: flex;
+    align-items: center;
+    justify-content: center; /*alinhamento horizontal dos itens*/
+    width: 50%;
+}
+
+.musicmatch-phone img{
+    height: 50%;
+}
+
+.musicmatch-continue{
+    display: flex;
+    align-items: center; /*horizontal*/
+    justify-content: space-around; /*vertical*/
+    flex-direction: column;
+    width: 50%;
+    min-height: 45rem;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.musicmatch-logo{
+    height: 8rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    height: 12rem;
+}
+
+.musicmatch-login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.musicmatch-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
-}
-
-.musicmatch-phone img {
-    height: 50rem;
-}
-
-.matchmusic-continue {
-    display: flex;
-    flex-direction: column;
-    height: 25%;
-    width: 50%;
-    align-items: center;
-    margin-bottom: 390px;
-    background-color: blueviolet;
-}
-
-.profile-photo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: orangered;
     width: 100%;
-    height: 100%;
+    padding: 1.3rem 0;
 }
 
-.profile-photo img {
-    width: 30%;
-    margin-right: 15px;
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('./src/5a902db97f96951c82922874.png')
+}
+
+.app-download:nth-child(2){
+    background-image: url('./src/5a902dbf7f96951c82922875.png')
+}
+
+/* media queries*/
+
+@media (max-width: 1024px){
+    .musicmatch-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: #ffffff;
+    }
+
+    .musicmatch-wapper{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
+    .musicmatch-phone{
+        display: none;
+    }
+    .insagram-continue{
+        width: 100%;
+    }
 }
